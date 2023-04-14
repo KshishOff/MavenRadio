@@ -37,18 +37,15 @@ public class Radio {
     public void louder() {
         if (currentVolume < 10) {
             currentVolume++;
-        } else {
-            currentVolume = 10;
         }
     }
 
     public void quieter() {
         if (currentVolume > 0) {
             currentVolume--;
-        } else {
-        currentVolume = 0;
         }
     }
+
 
     public int getCurrentVolume() {
         return currentVolume;
